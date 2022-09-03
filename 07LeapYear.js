@@ -1,20 +1,17 @@
-// program to check leap year
+let f=45;
+let c=60;
 
-var year= 2020;
+function faren(){
+    console.log(`The ${f}º F is :${((c*9)/5)+32}º C`);
+}
 
-if(year %4 ===0){
-    if(year%100===0){
-        if(year%400===0){
-            console.log("This year" +year+ "is a leap year");
-        }
-        else{
-            console.log("This year" +year+ "is a not leap year");
-        }
-    }
-    else{
-        console.log("This year" +year+ "is a not leap year");
-    }
+function celcius(){
+    console.log(`The ${c}º C is :${((f-32)/9)*5}º F`);
 }
-else{
-    console.log("This year" +year+ "is a leap year");
-}
+
+faren();
+celcius();
+
+
+// OUTPUT:  The 45º F is :140º C
+//          The 60º C is :7.222222222222222º F   
